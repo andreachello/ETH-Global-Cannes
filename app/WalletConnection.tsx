@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/app/components/ui/dialog";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import {
@@ -11,8 +11,8 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Button } from "../components/ui/button";
+} from "@/app/components/ui/dropdown-menu";
+import { Button } from "./components/ui/button";
 
 //handle wallet balance fixed to 2 decimal numbers without rounding
 export function toFixed(num: number, fixed: number): string {

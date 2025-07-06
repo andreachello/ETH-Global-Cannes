@@ -15,14 +15,10 @@ function ChatInterface({ setStart }: any) {
 
 
     const suggestions = [
-        "Show me the best staking opportunities",
+        "Show me the best yield farming opportunities",
         "Compare APY rates across protocols",
-        "Find highest yield farms",
-        "Calculate potential earnings",
-        "Explain impermanent loss risks",
-        "List top lending protocols",
-        "Show liquidation risks",
-        "Find low-risk strategies"
+        "Find highest yield assets to invest in",
+        "Calculate potential earnings for my assets",
     ];
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -46,7 +42,8 @@ function ChatInterface({ setStart }: any) {
                                     onClick={() => setInputValue(suggestion)}
                                     className="flex items-center gap-2 px-4 py-3 rounded-xl bg-white border border-gray-200 hover:border-purple-300 hover:bg-purple-50 transition-all shadow-sm text-left group"
                                 >
-                                    <Sparkles size={16} className="text-purple-500 group-hover:text-purple-600" />
+                                    {/* <Sparkles size={16} className="text-purple-500 group-hover:text-purple-600" /> */}
+                                    <img className='rounded-full w-6 h-6' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTyFdgUgvLFmPtw55cNSdOzpMPlIyRNu-8xg&s" alt="Mantle" />
                                     <span className="text-gray-700 text-sm group-hover:text-gray-900">{suggestion}</span>
                                 </button>
                             ))}
